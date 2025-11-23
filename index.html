@@ -1,0 +1,355 @@
+﻿<!--Name: Travis Davis ID#: 2401555-->
+<!--Assignment: Internal Assessment #2 - Greenova Pantry - Ready-to-Cook Meal Kits-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenova Pantry | Fresh Meal Kits</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="greenova_logo.png">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header class="main-header">
+        <div class="logo-group">
+            <img src="greenova_logo.png" alt="Greenova Pantry Logo" class="logo">
+            <span class="site-title">The Greenova Pantry</span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="nav-link" id="nav-home">Home (Products)</a></li>
+                <li><a href="#" class="nav-link" id="nav-about">About Us</a></li>
+                <li><a href="#" class="nav-link" id="nav-login">Login / Register</a></li>
+                <li>
+                    <a href="#" class="nav-link" id="nav-cart">
+                        Cart
+                        <span id="cart-count">(0)</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HOME/PRODUCT PAGE -->
+        <section id="home-view" class="content-section active-view">
+            <h1>Authentic Jamaican Meal Kits</h1>
+            <p>Pick your dish, choose your quantity, and start cooking!</p>
+            <p>All kits serve 2. Kits contain relevant recipe (use is optional) and a thank you card!</p>
+
+            <!--ADDS CART ITEMS AND DETAILS-->
+            <div id="product-list" class="product-grid">
+                <!-- The data-product-id attribute is used by JS to identify items. -->
+
+                <article class="product-card" data-product-id="kit101">
+                    <img src="curry_goat.jpeg" alt="Curry Goat Meal Kit" class="product-main-image" width="100%" height="180">
+                    <div class="product-content">
+                        <h2 class="product-name">Curry Goat Kit</h2>
+                        <p class="product-description">Tender, seasoned goat simmered in rich Jamaican curry with aromatics and fresh vegetables. Authentic island flavor.</p>
+                        <p class="product-price">$4500.00</p>
+                    </div>
+                    <button class="add-to-cart-btn" data-id="kit101">Add to Cart</button>
+                </article>
+
+                <article class="product-card" data-product-id="kit102">
+                    <img src="curry_chicken.jpeg" alt="Curry Chicken Meal Kit" class="product-main-image" width="100%" height="180">
+                    <div class="product-content">
+                        <h2 class="product-name">Curry Chicken Kit</h2>
+                        <p class="product-description">A fast-cooking classic: soft chicken pieces cooked down in thick curry gravy with herbs, spices, and potatoes.</p>
+                        <p class="product-price">$3000.00</p>
+                    </div>
+                    <button class="add-to-cart-btn" data-id="kit102">Add to Cart</button>
+                </article>
+
+                <article class="product-card" data-product-id="kit103">
+                    <img src="curry_beef.jpg" alt="Curry Beef Meal Kit" class="product-main-image" width="100%" height="180">
+                    <div class="product-content">
+                        <h2 class="product-name">Curry Beef Kit</h2>
+                        <p class="product-description">Chunks of tender beef simmered in spiced curry sauce with vegetables, slow-cooked until rich and full of flavor.</p>
+                        <p class="product-price">$3500.00</p>
+                    </div>
+                    <button class="add-to-cart-btn" data-id="kit103">Add to Cart</button>
+                </article>
+
+                <article class="product-card" data-product-id="kit104">
+                    <img src="fried_chicken.jpeg" alt="Fried Chicken Meal Kit" class="product-main-image" width="100%" height="180">
+                    <div class="product-content">
+                        <h2 class="product-name">Fried Chicken Kit</h2>
+                        <p class="product-description">Crispy, golden-brown Jamaican-style fried chicken with seasoned flour and buttermilk-style coating.</p>
+                        <p class="product-price">$3000.00</p>
+                    </div>
+                    <button class="add-to-cart-btn" data-id="kit104">Add to Cart</button>
+                </article>
+
+                <article class="product-card" data-product-id="kit105">
+                    <img src="stew_beef.jpeg" alt="Stew Beef Meal Kit" class="product-main-image" width="100%" height="180">
+                    <div class="product-content">
+                        <h2 class="product-name">Stew Beef Kit</h2>
+                        <p class="product-description">Slow-cooked beef simmered in thick brown gravy with carrot, onion, garlic, and herbs.</p>
+                        <p class="product-price">$2500.00</p>
+                    </div>
+                    <button class="add-to-cart-btn" data-id="kit105">Add to Cart</button>
+                </article>
+
+                <article class="product-card" data-product-id="kit106">
+                    <img src="stew_chicken.jpeg" alt="Brown Stew Chicken Meal Kit" class="product-main-image" width="100%" height="180">
+                    <div class="product-content">
+                        <h2 class="product-name">Brown Stew Chicken Kit</h2>
+                        <p class="product-description">Juicy chicken browned then stewed in sweet-smoky gravy with fresh veggies.</p>
+                        <p class="product-price">$3000.00</p>
+                    </div>
+                    <button class="add-to-cart-btn" data-id="kit106">Add to Cart</button>
+                </article>
+
+                <article class="product-card" data-product-id="kit107">
+                    <img src="jerk_chicken.jpeg" alt="Jerk Chicken Meal Kit" class="product-main-image" width="100%" height="180">
+                    <div class="product-content">
+                        <h2 class="product-name">Jerk Chicken Kit</h2>
+                        <p class="product-description">Authentic jerk flavor with smoky heat from herbs, spices, and Scotch bonnet.</p>
+                        <p class="product-price">$3200.00</p>
+                    </div>
+                    <button class="add-to-cart-btn" data-id="kit107">Add to Cart</button>
+                </article>
+
+                <article class="product-card" data-product-id="kit108">
+                    <img src="oxtail.jpeg" alt="Oxtail Meal Kit" class="product-main-image" width="100%" height="180">
+                    <div class="product-content">
+                        <h2 class="product-name">Oxtail Meal Kit</h2>
+                        <p class="product-description">Slow-braised oxtail cooked with butter beans in rich, hearty gravy.</p>
+                        <p class="product-price">$4500.00</p>
+                    </div>
+                    <button class="add-to-cart-btn" data-id="kit108">Add to Cart</button>
+                </article>
+
+                <article class="product-card" data-product-id="kit109">
+                    <img src="Escovitch.jpeg" alt="Escovitch Fish Meal Kit" class="product-main-image" width="100%" height="180">
+                    <div class="product-content">
+                        <h2 class="product-name">Escovitch Fish Kit</h2>
+                        <p class="product-description">Crispy fried fish topped with spicy escovitch pickled carrots, onions, and bell peppers.</p>
+                        <p class="product-price">$4500.00</p>
+                    </div>
+                    <button class="add-to-cart-btn" data-id="kit109">Add to Cart</button>
+                </article>
+
+                <h1 style="grid-column: 1 / -1; margin-top: 40px; border-top: 1px solid var(--color-border); padding-top: 20px;">Side Dish Kits</h1>
+
+                <article class="product-card" data-product-id="kit201">
+                    <img src="rice_pease.jpeg" alt="Rice and Peas Kit" class="product-main-image" width="100%" height="180">
+                    <div class="product-content">
+                        <h2 class="product-name">Rice & Peas Kit</h2>
+                        <p class="product-description">Includes Rice, coconut milk, red peas, thyme, garlic, escallion, pimento, and instructions.</p>
+                        <p class="product-price">$1000.00</p>
+                    </div>
+                    <button class="add-to-cart-btn" data-id="kit201">Add to Cart</button>
+                </article>
+
+                <article class="product-card" data-product-id="kit202">
+                    <img src="white_rice.jpeg" alt="White Rice Kit" class="product-main-image" width="100%" height="180">
+                    <div class="product-content">
+                        <h2 class="product-name">White Rice Kit</h2>
+                        <p class="product-description">Includes Rice, butter, salt, and easy instructions for a perfect, fluffy side.</p>
+                        <p class="product-price">$1000.00</p>
+                    </div>
+                    <button class="add-to-cart-btn" data-id="kit202">Add to Cart</button>
+                </article>
+
+                <article class="product-card" data-product-id="kit203">
+                    <img src="mashed_potatoes.jpeg" alt="Mashed Potatoes Kit" class="product-main-image" width="100%" height="180">
+                    <div class="product-content">
+                        <h2 class="product-name">Mashed Potatoes Kit</h2>
+                        <p class="product-description">Includes Potatoes, butter, milk, seasoning, and instructions for smooth, creamy mash.</p>
+                        <p class="product-price">$1000.00</p>
+                    </div>
+                    <button class="add-to-cart-btn" data-id="kit203">Add to Cart</button>
+                </article>
+
+                <article class="product-card" data-product-id="kit204">
+                    <img src="dumplings.jpeg" alt="Dumplings Kit" class="product-main-image" width="100%" height="180">
+                    <div class="product-content">
+                        <h2 class="product-name">Dumplings Kit</h2>
+                        <p class="product-description">Flour and seasonings included. Instructions for both Fried and Boiled dumplings.</p>
+                        <p class="product-price">$1000.00</p>
+                    </div>
+                    <button class="add-to-cart-btn" data-id="kit204">Add to Cart</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- CART PAGE -->
+        <section id="cart-view" class="content-section hidden-view">
+            <h1>Your Shopping Cart</h1>
+
+            <div id="cart-items-container">
+            </div>
+
+            <div id="cart-summary" class="summary-box">
+                <h2>Order Summary</h2>
+                <p id="coupon-message" style="font-size: 0.8em; color: blue; margin-bottom: 5px;"></p>
+                <p>Sub-Total: <span id="cart-sub-total">$0.00</span></p>
+                <p>Discount: <span id="cart-discount">$0.00</span></p>
+                <p>Tax (15%): <span id="cart-tax">$0.00</span></p>
+                <p class="total-line">Total: <span id="cart-final-total">$0.00</span></p>
+
+                <div class="cart-actions">
+                    <button id="clear-all-btn" class="secondary-btn">Clear All</button>
+                    <button id="checkout-btn" class="primary-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHECKOUT PAGE -->
+        <section id="checkout-view" class="content-section hidden-view">
+            <h1>Finalizing Your Order</h1>
+
+            <div class="checkout-layout">
+                <form id="checkout-form" class="checkout-form">
+                    <h2>Customer & Shipping Details</h2>
+
+                    <!--Customer info-->
+                    <div class="form-group">
+                        <label for="co-name">Full Name (for order)</label>
+                        <input type="text" id="co-name" required>
+                    </div>
+
+                    <!-- Shipping method selection -->
+                    <!-- JS shows/hides pickup or delivery fields based on their selection -->
+                    <div class="form-group shipping-option">
+                        <input type="radio" id="co-pickup" name="shipping-method" value="pickup">
+                        <label for="co-pickup">Pickup (Free)</label>
+
+                        <input type="radio" id="co-delivery" name="shipping-method" value="delivery" checked>
+                        <label for="co-delivery">Delivery (+$1000.00)</label>
+                    </div>
+
+                    <div class="form-group hidden-field" id="pickup-group">
+                        <label for="co-pickup-location">Choose Pickup Location (1 of 3)</label>
+                        <select id="co-pickup-location">
+                            <option value="">-- Select a location --</option>
+                            <option value="Kingston Central">Kingston Central Store</option>
+                            <option value="Montego Bay Plaza">Montego Bay Plaza Kiosk</option>
+                            <option value="Portmore Mall">Portmore Mall Outlet</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="delivery-group">
+                        <label for="co-address">Delivery Address</label>
+                        <input type="text" id="co-address" placeholder="Street, City, Parish" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="co-payment-amount">Amount Being Paid ($)</label>
+                        <input type="number" id="co-payment-amount" min="0.01" step="0.01" required>
+                    </div>
+
+                    <div class="checkout-actions">
+                        <button type="submit" id="confirm-btn" class="primary-btn">Confirm Order</button>
+                        <button type="button" id="checkout-cancel-btn" class="secondary-btn">Cancel/Close</button>
+                    </div>
+                </form>
+
+                <!-- Order summary -->
+                <div class="summary-box">
+                    <h2>Final Total</h2>
+                    <p>Sub-Total: <span id="co-sub-total">$0.00</span></p>
+                    <p>Tax & Discount: <span id="co-tax-discount">$0.00</span></p>
+                    <p>Shipping Cost: <span id="co-shipping-cost">$0.00</span></p>
+                    <p class="final-total">TOTAL: <span id="co-final-total">$0.00</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOGIN VIEW -->
+        <section id="login-view" class="content-section auth-form hidden-view">
+            <h1>Customer Login</h1>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email / Username</label>
+                    <input type="text" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="primary-btn">Login</button>
+                <p>New customer? <a href="#" id="toggle-to-register">Register here</a></p>
+            </form>
+        </section>
+
+        <!-- REGISTER VIEW -->
+        <section id="register-view" class="content-section auth-form hidden-view">
+            <h1>Create an Account</h1>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email</label>
+                    <input type="email" id="reg-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-username">Username</label>
+                    <input type="text" id="reg-username" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-dob">Date of Birth</label>
+                    <input type="date" id="reg-dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" required>
+                </div>
+                <button type="submit" class="primary-btn">Register</button>
+                <p>Already have an account? <a href="#" id="toggle-to-login">Login here</a></p>
+            </form>
+        </section>
+
+        <!-- ABOUT VIEW -->
+        <section id="about-view" class="content-section hidden-view">
+            <h1>About Greenova Pantry</h1>
+
+            <article class="company-mission">
+                <h2>Our Vision</h2>
+                <p>Here at The Greenova Pantry, we pride ourselves in the quality food items and substantial nature of our meal packages, consequently making it easier for you, our customers, to shop for your next meal. We provide healthy, convenient, and waste-free meal solutions that simplify cooking, and minimizing effort.</p>
+                <h2>Our Mission</h2>
+                <p>We deliver pre-measured, locally sourced ingredients with easy-to-follow recipes, ensuring maximum flavor and minimum preparation time.</p>
+            </article>
+
+            <article class="student-details">
+                <h2>My Student Details</h2>
+                <p><strong>Full Name:</strong> Travis Davis</p>
+                <p><strong>ID#:</strong> 2401555</p>
+                <p><strong>Module Code:</strong> CIT2011</p>
+                <p><strong>Assignment Name:</strong> Web Programming IA#2 </p>
+                <p><strong>Class Day/Time:</strong> Wednesdays at 3:00 pm</p>
+
+                <p>For comments or queries, send us an email:</p>
+                <a href="mailto:travisodavis@students.utech.edu.jm" class="mailto-link">
+                    travisodavis@students.utech.edu.jm
+                </a>
+            </article>
+        </section>
+
+    </main>
+
+    <!--FOOTER SECTION-->
+    <footer id="contact-info" class="main-footer">
+        <p>&copy; 2025 Greenova Pantry. All Rights Reserved.</p>
+        <p>Created by Travis Davis | ID: 2401555</p>
+
+        <p>Resources: <a href="https://github.com/TRAVISDAVISutek/IA2_2401555_SEM25-26.git" target="_blank">GitHub Repository</a> | <a href="https://2ia2401555sem12525.netlify.app/" target="_blank">Hosting</a></p>
+
+        <p><a href="#top">Return to top</a></p>
+    </footer>
+    <!--Java script file link-->
+    <script src="script.js"></script>
+
+</body>
+</html>
